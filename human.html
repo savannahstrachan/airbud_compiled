@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+<title>Hooman Profile</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+           <link rel="stylesheet" href="css/ss_style.css" />
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+
+
+<script src="https://use.fontawesome.com/ddc66602f4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="kr-airbud-profile.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="css/ss_style.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<!-- NavBar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="ss_index.html">Good Dog!</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="donate.html">Donate<span class="sr-only">(current)</span></a></li>
+        <li><a href="FAQ.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="human.html">Hooman</a></li>
+            <li><a href="dog.html">Doggie</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+      <a id="modal1" href="#" data-toggle="modal" data-target="#bannerformmodal">Log In</a>
+<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Log Into Your Account</h4>
+        </div>
+        <div class="modal-body">
+          <form id="form1" method="POST" name="form1">
+            <div class="form-group">
+              <div class="input-group">                               
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" required onchange="validateEmailAdd();"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">                               
+                <span class="input-group-addon"><i class="fa fa-sign-in"></i></span>
+                <input id="passWord1" type="text" class="form-control" placeholder="Password" name="passwordLogIn" onchange="validatePassword();"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-blue">Submit</button>
+        </div>
+        <div>
+          <button id="lostPasswordBtn" type="button" class="btn btn-link">Lost Password?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+/
+<a id="modal2" href="#" data-toggle="modal" data-target="#bannerformmodal2" class = "">Sign Up</a>
+<div class="modal fade bannerformmodal" tabindex="-2" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal2">
+  <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel2">Create Your Account</h4>
+          </div>
+          <div class="modal-body">
+            <form id="form2" method="POST" name="form2">
+  
+              <div class="form-group">
+                <div class="input-group">                               
+                  <span class="input-group-addon"><i class="fa fa-paw"></i></span>
+                  <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name" onsubmit="validateForm();"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">                               
+                  <span class="input-group-addon"><i class="fa fa-paw"></i></span>
+                  <input id="last_name" type="text" class="form-control" placeholder="Last Name" name="last_name" onsubmit="validateForm();"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">                               
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">                               
+                  <span class="input-group-addon"><i class="fa fa-sign-in"></i></span>
+                  <input id="createPassword1" type="text" class="form-control" placeholder="Create Password" name="createPassword1" onchange="validatePassword();"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">                               
+                  <span class="input-group-addon"><i class="fa fa-sign-in"></i></span>
+                  <input id="retypePassword1" type="text" class="form-control" placeholder="Retype Password" name="retypePassword1" onchange="validatePassword();"/>
+                </div>
+              </div>
+              
+             <!--  <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-location1"></i></span>
+                  <select class="form-control" name="monthly_rental" class="selectpicker">
+                    <option>What state are you in?</option>
+                    <option>Louisiana</option>
+                    <option>New York</option>
+                    <option>Florida</option>
+                    <option>California</option>
+                    <option>Texas</option>
+                  </select>
+                </div>
+              </div> -->
+  
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-blue">Create Your Profile</button>
+          </div>        
+        </div>
+      </div>
+    </div>
+</div>
+<!-- END OF FORM POP-UPS -->
+        <!-- <li><a href="#">Sign Up</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+<!-- Add icon library -->
+
+<div class="row" class="col-xs-12">
+    <div class="card" class="col-xs-12">
+      <img src="https://static1.squarespace.com/static/514ffe4ee4b020d11228d65c/t/5398809be4b0b2d8106b1085/1402503342745/" alt="John" style="width:100%">
+      <div class="container">
+        <h4>John</h4>
+        <p class="title">-Dog fan-</p>
+        <p class="title">Birthday: January 1, 1990</p>
+        <p class="title">New Orleans</p>
+        <a href="#"><i class="fa fa-instagram"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Send John a message</button></p>
+        <p><button>Check out John's images</button></p>
+      </div>
+    </div>
+    <div class="boxed1" class="col-xs-12" >
+        <h4>Meet John!</h4>
+        <h3>"I'm new to Louisiana and am still adjusting to life in New Orleans but using this website to spend time with dogs and getting to know their owners has really helped me in my transition to life in NOLA"</h3>
+    </div>
+    <div class="boxed2" class="col-xs-12">
+        <h3>Here's what other users have to say about John:</h3>
+        <!-- BEGINNING OF REVIEWS -->
+            <div class="container2">           
+                <div class="userFeedback-container">
+                    <div class="feedback-container ">
+            <div class="userFeedback-and-userRatings"  >
+    
+            <div class="as-a-renter">
+                        
+                    <div class="ratings  u-alignCenter">
+                
+                        <div class="rating u-inlineBlock u-verticalAlignBottom">
+                        <div class="stars r45 "></div>
+                        </div>
+                
+                    <div class="u-inlineBlock u-verticalAlignBottom">
+                    </div>
+                    </div>
+                        <div class="js-feedbackAndRatingsPaging" data-review-count="3" data-reviews-per-page="5">
+                        <ul>
+                            <li class="review-list-item page1-review-list-item" id="review-1">
+                                
+               <div class="messageItem messageItem--fromOwner  ">
+        
+                    <a class="messageAuthorPhoto"
+                    href="" > <img class="profilePhoto profilePhoto--large profilePhoto--round profilePhoto--noBorder profilePhoto--owner" src="https://d1zgdcrdir5wgt.cloudfront.net/media/driver/uX8K-fRbQ5CUx_NljXyZWA.84x84.jpg"/>
+                    </a>
+            
+            <div class="messageItem-details">
+            <div class="messageBody">John is really great with dogs!</div>
+            <div>     
+                    
+                    <a class="messageAuthor"
+                    href="">Trinity T.</a>
+                            
+            <span class="message-timeCreated">&ndash; May 27, 2017</span>
+            </div>
+            </div>
+            </div>
+                        </li>
+                        
+                        <li class="review-list-item page1-review-list-item" id="review-2">
+                                
+               <div class="messageItem messageItem--fromOwner  ">
+        
+                    <a class="messageAuthorPhoto"
+                    href=""> <img class="profilePhoto profilePhoto--large profilePhoto--round profilePhoto--noBorder profilePhoto--owner" src="https://d1zgdcrdir5wgt.cloudfront.net/media/driver/2cdKS5UoT0CHAVd0eHE6QQ.84x84.jpg"/>
+                    </a>
+            
+            <div class="messageItem-details">
+            <div class="messageBody">My dog always enjoys hanging out with John!</div>
+            <div>
+                                                        
+                    <a class="messageAuthor"
+                    href="">Ron</a>
+                          
+        <span class="message-timeCreated">&ndash; May 25, 2017</span>
+            </div>
+            </div>
+            </div>
+                        </li>                   
+                    </ul>                   
+                </div>           
+            </div>
+                </div>
+                </div>
+             </div>      
+                </div>
+                    </div>
+                </div>
+            </div>
+    <!-- END OF REVIEWS -->
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
