@@ -82,6 +82,7 @@ body{
 .profile-link:hover{
 	color:black;
 	text-decoration: underline;
+	opacity: .5;
 }
 
 .samples{
@@ -190,6 +191,19 @@ h3{
 
 }
 
+h4 {
+	font-family: Pacifico;
+	color: white;
+	 text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+      font-size: 30px;
+       opacity: .7;
+}
+
 h5 {
 	font-size: 75px;
 	text-align: center; 
@@ -210,6 +224,14 @@ h5 {
 p{
 	text-align: center;
 	font-family: 'PT Sans', sans-serif;
+
+}
+
+.p1{
+
+	padding: 20px;
+	font-family: Pacifico;
+	color: black;
 
 }
 
@@ -928,4 +950,201 @@ body .progress-bg div {
 }
 
 
+/**{
+    box-sizing: border-box;
+}*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+    float: left;
+    font-family: Pacifico;
+    background-color: #ea7210;
+}
+
+.container {
+    text-align: left;
+    float: left;
+
+}
+
+.title {
+    color: black;
+    font-size: 18px;
+    text-align: left
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:;
+    text-align: left;
+    cursor: pointer;
+    width: auto;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.navbar {
+    font-family: Pacifico;
+}
+
+#modal1 {
+    color: green;
+}
+
+#modal2 {
+    color: green;
+}
+
+.rbBTN {
+    background-color:;
+}
+
+.boxed1 {
+    border: 0px dotted black;
+    padding: 22px;
+    background-color: #ea7210;
+/*  margin-left: : 2px;
+*/  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px;
+    float:left;
+    font-family: Pacifico;
+    text-align: center;
+}
+
+.boxed2 {
+    border: 0px dotted black;
+    padding: 22px;
+    background-color: #ea7210;
+/*    margin-left: : 2px;
+*/    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px;
+    float:left;
+    font-family: Pacifico;
+}
+
+.container2 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.userFeedback-container {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.u-alignCenter {
+    text-align: center;
+}
+
+.label {
+    font-family: BasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #5d5d5d;
+}
+
+.userFeedback-and-userRatings .as-a-renter .feedback-title {
+    color: #59d389;
+}
+
+.u-verticalAlignBottom {
+    vertical-align: bottom;
+}
+
+.u-inlineBlock {
+    display: inline-block;
+}
+
+.rating--users {
+    margin-left: 2px;
+    padding-top: 2px;
+}
+
+.userFeedback-and-userRatings .review-list-item .page1-review-list-item {
+    display: list-item;
+}
+
+.messageItem {
+    position: relative;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.messageAuthorPhoto {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.profilePhoto--noBorder {
+    border: none;
+}
+
+.profilePhoto--owner {
+    border-color: #8f63f4;
+}
+.profilePhoto--large {
+    width: 80px;
+    height: 80px;
+}
+.profilePhoto--round {
+    border: 2px solid #fff;
+    border-radius: 999em;
+    overflow: hidden;
+}
+.profilePhoto {
+    border: 1px solid #949494;
+}
+
+.messageItem-details {
+    padding-left: 90px;
+}
+
+.messageBody {
+    margin-bottom: 15px;
+}
+
+.messageAuthor {
+    font-size: 13px;
+    color: #59d389;
+}
+
+.message-timeCreated {
+    font-size: 13px;
+    color: #5d5d5d;
+}
+
+.ss_nav1 {
+	font-family: Pacifico;
+	color: #ea7210;
+	 text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+       opacity: .7;
+}
 
